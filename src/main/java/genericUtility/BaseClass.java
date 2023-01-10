@@ -64,6 +64,7 @@ public class BaseClass {
 		String username = pUtil.readDataFromPropertyFile("username");
 		String password = pUtil.readDataFromPropertyFile("password");
 		lp.login(username, password);
+		Reporter.log("Logged in successfuly");
 	}
 
 	@AfterMethod(groups = {"smoke", "regression"})
